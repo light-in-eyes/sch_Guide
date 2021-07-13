@@ -1,0 +1,60 @@
+<!-- 以下是square内容 -->
+<view class="big">
+  <scroll-view scroll-y="true" class="scv">
+    <block wx:for="{{list}}" wx:for-item="itemName" wx:key="id">
+      <view class="box">
+      <!--第一个盒子分为左右两部分，左边为头像，右侧为用户名和时间信息-->
+        <view class="firstBlock">
+          <image class="userIcon" src="{{itemName.userIcon}}"></image>
+          <view class="userInfo">
+            <view class="userName">
+              <text>{{itemName.userName}}</text>
+            </view>
+            <view class="userTime">
+              <text>发布时间:  {{itemName.sendTime}}</text>
+            </view>
+          </view>
+        </view>
+      
+        <!--第二个盒子展示内容-->
+        <view class="secendBlock">
+          <view class="content">
+            <text class="text">{{itemName.contentMain}}</text>
+              <view>
+                <image wx:if="{{itemName.image[0]}}" src="{{itemName.image[0]}}" class="userImage"></image>
+                <image wx:if="{{itemName.image[1]}}" src="{{itemName.image[1]}}" class="userImage"></image>
+                <image wx:if="{{itemName.image[2]}}" src="{{itemName.image[2]}}" class="userImage"></image>
+              </view>
+          </view>
+        </view>
+  
+        <!--第三个盒子显示点赞信息-->
+        <view class="thirdBlock">
+          <image class="likeIcon" src="cloud://today-data-sjfrf.746f-today-data-sjfrf-1303015318/school/like_1.png"  bindtap="clickLike"  data-id="{{itemName._id}}"></image>
+          <!-- <van-icon name="good-job" class="likeIcon" size="20px" bindtap="clickLike"  data-id="{{itemName._id}}"/> -->
+          <text class="likeNum">{{itemName.likeNum}}</text> 
+          <input placeholder-class="center" placeholder="请留言....." class="inp" bindinput='getInputValue'></input>
+          <button class="btn" bindtap="sendTalk" data-id="{{itemName._id}}"><text>评论</text></button> 
+           <!-- <van-button square class="btn" type="info" bindtap="sendTalk"  data-id="{{itemName._id}}">发表</van-button>  -->
+        </view>
+      
+        <!-- 展示评论的内容 -->
+        <block wx:for="{{talkMain}}" wx:for-item="talkItem" wx:key="talk">
+          <view class="fourthBlock"  wx:if="{{talkItem.item_id == itemName._id}}">
+            <!-- <text></text>这里边应该写发表此评论的用户名 -->
+            <text class="talkUser">{{talkItem.talkUser}}: </text>
+            <text class="talkContent">{{talkItem.talkContent}}</text>
+          </view>
+        </block>
+  
+      </view>
+    </block>
+  </scroll-view>
+  
+  <!-- 引入底部菜单的wxml -->
+  <include src="/pages/bottom_menu/bottom_menu"/>
+  <!-- 注意：引入的样式得放入篇章的最底部，放在顶部的时候会被遮挡住 -->
+</view>
+  
+
+

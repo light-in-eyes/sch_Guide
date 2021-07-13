@@ -1,0 +1,9 @@
+<view class="instru">
+  <view class="title">{{dataArr.title}}</view>
+  <text>\n</text>
+  <view class="img">
+      <image mode="widthFix" src="https://ftp.bmp.ovh/imgs/2021/04/73e6dc2ab057b310.jpg" mode="aspectFit|aspectFill|widthFix" />
+    </view>
+  <text>\n</text>
+  <view class="content">　　{{dataArr.content}}</view>
+</view>

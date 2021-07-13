@@ -1,0 +1,5 @@
+.land2 image{
+  width: 100%;
+  height: calc(100vw * 280 / 520);
+  text-align: center;
+}

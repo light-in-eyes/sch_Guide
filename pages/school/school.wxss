@@ -1,0 +1,205 @@
+/* 设置顶部背景颜色 */
+.big {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #a5caf1 0%,  #ffedf5 100%);
+}
+swiper image {
+  width: 98%;
+  margin-left: 8rpx;
+  border-radius: 6px;
+}
+swiper{
+  width: 100%;
+  height: calc(100vw * 280 / 520);
+  border-radius: 6px;
+}
+
+/* 设置分类导航的样式 */
+.navBox {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  justify-content: center;
+}
+.navBox view {
+  margin: 0 14px;
+  margin-top: 18px;
+  text-align: center;
+}
+.navBox image{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+.navBox text {
+  font-size: 13px;
+}
+
+/* 设置学校简介 */
+.instruction {
+  width: 340px;
+  height: 130px;
+  background-color: #bed7f3;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 1px 1px 5px 2px rgb(139, 139, 204);
+}
+/* 设置校徽 */
+.schoolbadge {
+  width: 60px;
+  height: 60px;
+  left: 140px;
+  top: -20px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0 auto;
+}
+.schoolbadge image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.instruction-- {
+  width: 340px;
+  height: 30px;
+  background-color: #bed7f3;
+  position: absolute;
+  top: 43px;
+  font-size: 14px;
+}
+.instruction1{
+  width: 130px;
+  height: 26px;
+  line-height: 26px;
+  background-color:	rgb(139, 139, 204);
+  margin-left: 30px;
+  border-radius: 18px;
+  color: #333;
+  text-align: center;
+}
+.instruction2 {
+  width: 130px;
+  height: 26px;
+  line-height: 26px;
+  background-color:	rgb(139, 139, 204);
+  border-radius: 18px;
+  color: #333;
+  margin-top: -26px;
+  margin-left: 180px;
+  text-align: center;
+}
+.text-instru {
+  width: 100%;
+  height: 30px;
+  background-color: #bed7f3;
+  position: absolute;
+  top: 73px;
+  font-size: 14px;
+}
+.time {
+  width: 144px;
+  height: 26px;
+  line-height: 26px;
+  background-color: #bed7f3;
+  margin-left: 27px;
+}
+.quality {
+  width: 160px;
+  height: 26px;
+  line-height: 26px;
+  background-color: #bed7f3;
+  margin-left: 33px;
+}
+.motto {
+  width: 200px;
+  height: 26px;
+  line-height: 26px;
+  background-color: #bed7f3;
+  margin-left: 27px;
+}
+
+/* 设置顶部标题 */
+.newtext {
+  margin-top: 40rpx;
+}
+.newtext .chin {
+  font-size: 17px;
+  margin-left: 16px;
+  font-weight: bolder;
+}
+.newtext .eng {
+  font-size: 12px;
+  color: 	#333;
+  margin-left: 12px;
+}
+
+/* ------------- */
+.card_container {
+  padding: 6rpx 20rpx;
+  border-radius: 16rpx;
+  box-shadow: 5rpx 10rpx 30rpx -8rpx #ccccce;
+  margin: 16rpx 20rpx;
+}
+.card_container :active {
+  background-color: #ececec;
+}
+.title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 31rpx;
+  margin-bottom: 16rpx;
+}
+.desc {
+  display: flex;
+  height: 120rpx;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.right_icon image {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+}
+.left {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  padding-right: 20rpx;
+  word-wrap: break-word;
+  font-size: 30rpx;
+}
+
+.bottom {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.like {
+  display: flex;
+  margin-top: -8rpx;
+}
+.like text{
+  font-size: 24rpx;
+  text-align: center;
+  margin-left: 12rpx;
+  margin-top: 8rpx;
+}
+.publish_time{
+  font-size: 24rpx;
+}
+.like image {
+  width: 40rpx;
+  height: 40rpx;
+  z-index: 999;
+  margin-top: 4rpx;
+}

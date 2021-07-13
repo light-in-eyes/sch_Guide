@@ -1,0 +1,92 @@
+<view class="big">
+  <!-- 顶部图片 -->
+  <view class="head">
+      <swiper autoplay interval="2500" circular>
+        <swiper-item bindtap="clickswiper1"><image mode="widthFix" src="https://ftp.bmp.ovh/imgs/2021/04/73e6dc2ab057b310.jpg" /></swiper-item> 
+        <swiper-item bindtap="clickswiper2"><image mode="widthFix" src="https://ftp.bmp.ovh/imgs/2021/06/7adacd6afec4765a.webp" /></swiper-item>
+        <swiper-item bindtap="clickswiper3"><image mode="widthFix" src="https://ftp.bmp.ovh/imgs/2021/06/16288188f6724236.webp" /></swiper-item> 
+      </swiper>
+  </view>
+
+  <!-- 分类导航 -->
+  <view class="navBox">
+    <view>
+      <navigator open-typell="navigate" url="../school/stu-instru/stu-instru">
+        <image src="../../icons/school/01.png" />
+        <text>学校简介</text>
+      </navigator>
+    </view>
+    <view>
+      <navigator open-type="navigate" url="../square/square">
+        <image src="../../icons/school/02.png" />
+        <text>校园论坛</text>
+      </navigator>
+    </view>
+    <view>
+      <navigator open-type="navigate" url="./landscape/landscape">
+        <image src="../../icons/school/03.png" />
+        <text>校园风光</text>
+      </navigator>
+    </view>
+    <view>
+      <navigator open-type="navigate" url="/pages/school/map/index">
+        <image src="../../icons/school/04.png" />
+        <text>地图导航</text>
+      </navigator>
+    </view>
+  </view>
+
+
+  <!-- 学校介绍 -->
+  <view class="instruction">
+    <view class="schoolbadge">
+      <image mode="widthFix" src="../../img/01.jpg" mode="aspectFit|aspectFill|widthFix" />
+    </view>
+    <view class="instruction--">
+      <view class="instruction1">综合类直属大学</view>
+      <view class="instruction2">教育部直属大学</view>
+    </view>
+    <view class="text-instru">
+      <text class="time">创办时间：1978年</text>
+      <text class="quality">办学性质：公立高校</text>
+      <text class="motto">校训：重德重能 善学善建</text>
+    </view>
+  </view>
+
+  <!-- 最新资讯 -->
+  <view class="newinformation">
+    <view class="newtext">
+      <text class="chin">最新资讯</text>
+      <text class="eng">/Latest News</text>
+    </view>
+
+
+    <view bindtap="clickRow" class="card_container"
+      wx:for="{{dataList}}"
+      wx:key="index"
+      data-id="{{item._id}}"
+      data-idx="{{index}}"
+      >
+      <view>
+        <view class="top clearfix">
+          <view class="title">{{item.title}}</view>
+          <view class="desc">
+            <view class="left">{{item.content}}</view>
+            <view class="right_icon">
+              <image src="{{item.icon}}" mode="widthFix" />
+            </view>
+          </view>
+        </view>
+
+        <view class="bottom">
+          <view class="like">
+            <image catchtap="clickLike" src="{{imgUrl}}" />
+            <text>{{item.hits}}</text>
+	    		</view>
+
+          <view class="publish_time">发布时间: {{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

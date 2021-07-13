@@ -1,0 +1,32 @@
+<view class="navbar">
+  <label
+    wx:for="{{navbar}}"
+    wx:key="unique"
+    data-idx="{{index}}" 
+    class="item {{currentTab==index ? 'active' : ''}}"
+    bindtap="navbarTap"
+    >
+    {{item}}
+  </label>
+</view>
+    
+<view hidden="{{currentTab!==0}}" class="current">
+  <mapchart markers="{{markers_0}}" polyline="{{polyline}}" longitude="{{longitude}}" latitude="{{latitude}}" tabs="{{tabs_0}}" datalist="{{datalist_0}}">
+  </mapchart>
+</view>
+
+<view hidden="{{currentTab!==1}}">
+  <mapchart markers="{{markers_1}}" polyline="{{polyline}}" longitude="{{longitude}}" latitude="{{latitude}}" tabs="{{tabs_1}}" datalist="{{datalist_1}}"></mapchart>
+</view>
+
+<view hidden="{{currentTab!==2}}">
+  <mapchart markers="{{markers_2}}" polyline="{{polyline}}" longitude="{{longitude}}" latitude="{{latitude}}" tabs="{{tabs_2}}" datalist="{{datalist_2}}"></mapchart>
+</view>
+
+<view hidden="{{currentTab!==3}}">
+  <mapchart markers="{{markers_3}}" polyline="{{polyline}}" longitude="{{longitude}}" latitude="{{latitude}}" tabs="{{tabs_3}}" datalist="{{datalist_3}}"></mapchart>
+</view>
+
+<view hidden="{{currentTab!==4}}">
+  <mapchart markers="{{markers_4}}" polyline="{{polyline}}" longitude="{{longitude}}" latitude="{{latitude}}" tabs="{{tabs_4}}" datalist="{{datalist_4}}"></mapchart>
+</view>

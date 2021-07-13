@@ -1,0 +1,14 @@
+.landscape image{
+  width: 100%;
+  height: calc(100vw * 280 / 520);
+  text-align: center;
+}
+.line2, .line1, .line3 {
+  margin-top: -35px;
+  margin-left: 10px;
+  color: #fff;
+}
+.landscape :nth-child(2) {
+  padding: 3px 0;
+  
+}

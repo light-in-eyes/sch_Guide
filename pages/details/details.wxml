@@ -1,0 +1,7 @@
+<view class="detail">
+  <view class="title">{{detail.name}}</view>
+  <text>\n</text>
+  <image mode="widthFix" src="{{detail.src}}" />
+  <text>\n</text>
+  <view class="content">　　{{detail.txt}}</view>
+</view>

@@ -1,0 +1,36 @@
+/* pages/bottom_menu/bottom_menu.wxss */
+.bottomMenu{
+  height: 10%;
+  width: 100%;
+  /*介里是弹性布局*/
+  display:flex;
+  flex-direction: row;/*使得主轴为水平方向，起点为左端(即实现原本三个竖直排的view可以水平排)*/
+  justify-content: center;/*使得内容从左端变为中间*/
+  /*将地面菜单固定到底部*/
+  position:fixed;
+  bottom:0rpx;
+  z-index: 999;
+}
+
+.leftTab,
+.centerTab,
+.rightTab{
+  background-color: #ffedf5;
+  width: 250rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.centerTab image{
+  height: 90rpx;
+  width: 90rpx;
+  margin-top: 16rpx;
+}
+
+.leftText,
+.rightText{
+  position: absolute;
+  top:30rpx;
+  font-size: 40rpx;
+  color: #979797;
+}

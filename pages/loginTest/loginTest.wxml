@@ -1,0 +1,9 @@
+<!--miniprogram/pages/authPage/authPage.wxml-->
+<view class="container">
+  <view class="sec_container">
+    <image class="hintImage" src="../../img/01.jpg"></image>
+    <text class="hintText"> 天津城建大学欢迎您</text>
+  </view>
+      <button class="loginButton" bindtap="getUserProfile">开启城大之旅</button>
+</view>
+

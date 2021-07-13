@@ -1,0 +1,12 @@
+<view class="detail">
+  <view class="title">{{detail.title}}</view>
+  <text>\n</text>
+  <view>
+    <text class="time">时间：{{detail.time}}</text>
+    <text class="source" decode>来源：{{detail.source}}</text>
+  </view>
+  <text>\n</text>
+  <view class="img"><image class="" src="{{detail.image}}" mode="widthFix"></image></view>
+  <text>\n</text>
+  <view class="content">　　{{detail.content}}</view>
+</view>

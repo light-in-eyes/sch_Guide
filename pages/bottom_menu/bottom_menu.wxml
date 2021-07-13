@@ -1,0 +1,12 @@
+<view class="bottomMenu">
+  <view class="leftTab" bindtap="square_tab">
+    <text class="leftText" style='color:{{firstColor}}'>广场</text>
+  </view>
+  <view class="centerTab" bindtap="addContent_tab">
+     <image src="cloud://today-data-sjfrf.746f-today-data-sjfrf-1303015318/school/plus.png"></image>
+  </view>
+  <view class="rightTab" bindtap="userInfo_tab">
+     <text class="rightText" style='color:{{secendColor}}'>我的</text>
+  </view>
+</view>
+

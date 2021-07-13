@@ -1,0 +1,12 @@
+<view class="contentBg">
+  <textarea class="contentMain" bindinput="bindTextAreaBlur"
+  placeholder="快来分享吧..." placeholder-style="color:#888888;font-size:38rpx;"></textarea>
+  <button bindtap="selectImage" class="imageButton">请选择图片</button>
+   <block wx:key="index" wx:for="{{image}}" >
+    <view class="imageBox">
+      <image  wx-if="{{image}}" src="{{item}}" class="selectedImage" bindlongpress="bindlongpressimg"></image>
+      
+    </view>
+   </block>
+</view>
+<button class="contentSend" bindtap="send">发布</button>

@@ -1,0 +1,21 @@
+<view class="landscape">
+  <view class="box">
+    <navigator class="" target="" url="../landscape/land_1/land_1" hover-class="navigator-hover" open-type="navigate">
+      <image mode="widthFix" src="cloud://today-data-sjfrf.746f-today-data-sjfrf-1303015318/school/land/IMG_20200824_120310.jpg" />
+      <view class="line1">校园周边</view>
+    </navigator>
+  </view>
+  <view class="box">
+    <navigator class="" target="" url="../landscape/land_2/land_2" hover-class="navigator-hover" open-type="navigate">
+      <image mode="widthFix" src="cloud://today-data-sjfrf.746f-today-data-sjfrf-1303015318/school/land/3.jpg" />
+      <view class="line2">建筑特色</view>
+    </navigator>
+  </view>
+  <view class="box">
+    <navigator class="" target="" url="../landscape/land_3/land_3" hover-class="navigator-hover" open-type="navigate">
+      <image mode="widthFix" src="cloud://today-data-sjfrf.746f-today-data-sjfrf-1303015318/school/land/u=2702187272,2172777439&fm=26&fmt=auto&gp=0.webp" />
+      <view class="line3">路边美景</view>
+    </navigator>
+  </view>
+</view>
+  

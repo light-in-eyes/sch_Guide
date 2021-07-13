@@ -1,0 +1,50 @@
+/* pages/commit/commit.wxss */
+page{
+  background-color: #efefef;
+}
+
+.contentBg{
+  background-color: white;
+  width: 100%;
+}
+
+.contentMain{
+  width: 96%;
+  height: 400rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 20rpx;
+  padding-bottom:20rpx;
+}
+
+.contentSend{
+  width: 84%;
+  height: 100rpx;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-top: 100rpx;
+  border-radius: 32rpx;
+  background-color: #00BFFF;
+  color: white;
+}
+
+.imageBox{
+  position: relative;
+  width: 29%;
+  margin-left: 30rpx;
+  margin-top:20rpx;
+  float:left;
+}
+
+.selectedImage{
+  height: 180rpx;
+  width: 100%;
+}
+
+.delImage{
+  height: 30rpx;
+  width: 30rpx;
+  position: absolute;
+  right: 0rpx;
+  top:0rpx;
+}
